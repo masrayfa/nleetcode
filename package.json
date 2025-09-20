@@ -1,0 +1,16 @@
+{
+  "name": "nleetcode",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bun src/main.ts",
+    "dev": "bun --watch src/main.ts",
+    "list": "bun src/main.ts --list"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
