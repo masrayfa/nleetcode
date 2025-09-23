@@ -1,9 +1,8 @@
 // W3 Schools explanation of Bubble Sort: https://www.w3schools.com/dsa/dsa_algo_bubblesort.php
 // To implement the Bubble Sort algorithm in a programming language, we need:
-
-//     An array with values to sort.
-//     An inner loop that goes through the array and swaps values if the first value is higher than the next value. This loop must loop through one less value each time it runs.
-//     An outer loop that controls how many times the inner loop must run. For an array with n values, this outer loop must run n-1 times.
+//     - An array with values to sort.
+//     - An inner loop that goes through the array and swaps values if the first value is higher than the next value. This loop must loop through one less value each time it runs.
+//     - An outer loop that controls how many times the inner loop must run. For an array with n values, this outer loop must run n-1 times.
 
 const bubbleSort = (arr: number[]): number[] => {
   const n = arr.length;

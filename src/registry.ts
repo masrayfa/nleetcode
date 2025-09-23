@@ -7,4 +7,6 @@ export const registry: Record<string, Loader> = {
     await import('./algorithms/sorting/bubble-sort.ts'),
   'binary-search': async () =>
     await import('./algorithms/searching/binary-search.ts'),
+  'selection-sort': async () =>
+    await import('./algorithms/sorting/selection-sort.ts'),
 };
