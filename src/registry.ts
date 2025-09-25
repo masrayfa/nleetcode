@@ -11,4 +11,6 @@ export const registry: Record<string, Loader> = {
     await import('./algorithms/sorting/selection-sort.ts'),
   'reverse-string': async () =>
     await import('./algorithms/strings/reverse-strings.ts'),
+  'reverse-string-II': async () =>
+    await import('./algorithms/strings/reverse-strings-II.ts'),
 };
