@@ -13,4 +13,6 @@ export const registry: Record<string, Loader> = {
     await import('./algorithms/strings/reverse-strings.ts'),
   'reverse-string-II': async () =>
     await import('./algorithms/strings/reverse-strings-II.ts'),
+  'merge-sorted-arrays': async () =>
+    await import('./algorithms/arrays/merge-sorted-arrays.ts'),
 };
