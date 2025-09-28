@@ -25,7 +25,7 @@ const bubbleSort = (arr: number[]): number[] => {
 };
 
 export function main(argv: string[]) {
-  const data = argv.length ? argv.map(Number) : [64, 34, 25, 12, 22, 11, 90];
+  const data = argv.length ? argv.map(Number) : [64, 34, 25, 12, 22, 90, 1];
 
   console.log('Unsorted array:', data);
 
