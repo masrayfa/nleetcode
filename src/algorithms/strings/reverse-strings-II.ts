@@ -44,7 +44,45 @@ function reverseString(s: string): string {
 export function main(argv: string[]) {
   const data = argv[0] ?? 'hello world';
   console.log('input: ', data);
-  const res = reverseString(data);
+  const res = ripersString(data);
 
   console.log('output: ', res);
+}
+
+function gabungkanKalimat(s: string[]) {
+  let res = '';
+
+  for (let i = 0; i < s.length; i++) {
+    res += s[i];
+  }
+
+  return res;
+}
+
+function pisahkanKalimat(s: string) {
+  let res = [];
+
+  for (let i = 0; i < s.length; i++) {
+    res.push(s[i]);
+  }
+
+  return res;
+}
+
+function ripersString(s: string) {
+  const hasilPisah = pisahkanKalimat(s);
+
+  let left = 0;
+  let right = hasilPisah.length - 1;
+
+  while (left < right) {
+    const temp = hasilPisah[left];
+    hasilPisah[left] = hasilPisah[right];
+    hasilPisah[right] = temp;
+
+    left++;
+    right--;
+  }
+
+  return gabungkanKalimat(hasilPisah);
 }

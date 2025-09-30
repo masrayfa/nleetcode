@@ -40,7 +40,30 @@ export function main(argv: string[]) {
   console.log('Array 1:', nums1);
   console.log('Array 2:', nums2);
 
-  mergeSortedInPlaceArrays(nums1, m, nums2, n);
+  gabungArray(nums1, m, nums2, n);
 
   console.log('Merged array:', nums1);
+}
+
+function gabungArray(nums1: number[], m: number, nums2: number[], n: number) {
+  let left = m - 1;
+  let right = n - 1;
+  let k = nums1.length - 1;
+
+  while (left >= 0 && right >= 0) {
+    if (nums1[left] >= nums2[right]) {
+      nums1[k] = nums1[left];
+      left--;
+    } else {
+      nums1[k] = nums2[right];
+      right--;
+    }
+    k--;
+  }
+
+  while (right >= 0) {
+    nums1[k] = nums2[right];
+    right--;
+    k--;
+  }
 }

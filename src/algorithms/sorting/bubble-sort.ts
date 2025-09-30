@@ -29,7 +29,28 @@ export function main(argv: string[]) {
 
   console.log('Unsorted array:', data);
 
-  const sortedArray = bubbleSort([...data]);
+  const sortedArray = babelSort([...data]);
 
   console.log('Sorted array:', sortedArray);
+}
+
+// #1 latian aja
+function babelSort(arr: number[]) {
+  const n = arr.length;
+
+  for (let i = 0; n - 1; i++) {
+    let swapped = false;
+    for (let j = 0; j < n - 1; j++) {
+      if (arr[j] > arr[j + 1]) {
+        let temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+
+        swapped = true;
+      }
+    }
+    if (!swapped) break;
+  }
+
+  return arr;
 }

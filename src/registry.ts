@@ -12,6 +12,10 @@ export const registry: Record<string, Loader> = {
   'products-of-array-except-self': async () =>
     await import('./algorithms/arrays/products-of-array-except-self.ts'),
 
+  // Two Pointers
+  'valid-palindrome': async () =>
+    await import('./algorithms/two-pointers/valid-palindrome.ts'),
+
   // Sorting
   'bubble-sort': async () =>
     await import('./algorithms/sorting/bubble-sort.ts'),
