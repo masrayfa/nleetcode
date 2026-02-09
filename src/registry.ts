@@ -11,6 +11,7 @@ export const registry: Record<string, Loader> = {
     await import('./algorithms/arrays/merge-sorted-arrays.ts'),
   'products-of-array-except-self': async () =>
     await import('./algorithms/arrays/products-of-array-except-self.ts'),
+  annagram: async () => await import('./algorithms/arrays/annagram.ts'),
 
   // Two Pointers
   'valid-palindrome': async () =>
