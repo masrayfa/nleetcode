@@ -11,7 +11,11 @@ export const registry: Record<string, Loader> = {
     await import('./algorithms/arrays/merge-sorted-arrays.ts'),
   'products-of-array-except-self': async () =>
     await import('./algorithms/arrays/products-of-array-except-self.ts'),
-  annagram: async () => await import('./algorithms/arrays/annagram.ts'),
+  anagram: async () => await import('./algorithms/arrays/anagram.ts'),
+  'group-anagrams': async () =>
+    await import('./algorithms/arrays/group-anagrams.ts'),
+  'top-k-frequent-elements': async () =>
+    await import('./algorithms/arrays/top-k-frequent-elements.ts'),
 
   // Two Pointers
   'valid-palindrome': async () =>
@@ -36,4 +40,6 @@ export const registry: Record<string, Loader> = {
   // Stacks
   'valid-parentheses': async () =>
     await import('./algorithms/stacks/valid-parentheses.ts'),
+  'valid-parentheses-yes-no': async () =>
+    await import('./algorithms/stacks/valid-parentheses-yes-no.ts'),
 };
